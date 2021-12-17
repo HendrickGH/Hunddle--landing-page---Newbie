@@ -1,0 +1,165 @@
+/*
+# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Violet: hsl(257, 40%, 49%)
+- Soft Magenta: hsl(300, 69%, 71%)
+
+## Typography
+
+### Headings
+
+- Family: [Poppins](https://fonts.google.com/specimen/Poppins)
+- Weights: 400, 600
+
+### Body
+
+- Family: [Open Sans](https://fonts.google.com/specimen/Open+Sans)
+- Weights: 400
+
+## Icons
+
+For the social icons, you can use a font icon library. Some suggestions can be found below:
+
+- [Font Awesome](https://fontawesome.com/)
+- [IcoMoon](https://icomoon.io/)
+- [Ionicons](https://ionicons.com/)
+*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	font-size: 62.5%;
+}
+body {
+	font-family: 'Poppins', sans-serif;
+	background-image: url(images/bg-desktop.svg);
+	background-repeat: no-repeat;
+	background-color: #674baf;
+}
+.header {
+	margin-top: 2.4rem;
+	margin-left: 3.2rem;
+}
+.logo {
+	cursor: pointer;
+}
+.container {
+	margin-top: 7.2rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.section {
+	display: grid;
+	width: 1200px;
+	grid-template-columns: 1fr 1fr;
+}
+.box-img img {
+	width: 100%;
+}
+.box-text {
+	margin: 3.6rem;
+	color: #fff;
+}
+.title {
+	font-size: 3.6rem;
+	letter-spacing: 0.75px;
+	line-height: 1.5;
+	margin-right: 7.2rem;
+	font-weight: 600;
+}
+.text {
+	line-height: 1.5;
+	letter-spacing: 0.075px;
+	font-size: 1.6rem;
+	font-weight: 400;
+	margin-top: 2.4rem;
+}
+.sign-up {
+	display: inline-block;
+	font-family: 'Open Sans';
+	font-weight: 400;
+	background-color: #fff;
+	color: #674baf;
+	font-size: 1.6rem;
+	text-decoration: none;
+	padding: 1.2rem 4.8rem;
+	border-radius: 1000rem;
+	margin-top: 3.2rem;
+	transition: all 0.3s;
+}
+.sign-up:hover {
+	background-color: #e882e8;
+	color: #fff;
+}
+.box-socials {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	margin-right: 7.2rem;
+	margin-bottom: 4.8rem;
+}
+.socials {
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+	width: 150px;
+}
+.social a {
+	display: inline-block;
+	border: 1px solid #fff;
+	border-radius: 100rem;
+	color: #fff;
+	transition: all 0.3s;
+}
+.social a:hover {
+	border-color: #e882e8;
+	color: #e882e8;
+}
+.icon {
+	height: 1.8rem;
+	width: 1.8rem;
+	padding: 1rem 1.2rem;
+}
+@media (max-width: 41em) {
+	html {
+		font-size: 50%;
+	}
+	body {
+		background-image: url(images/bg-mobile.svg);
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	.container {
+		flex-direction: row;
+		margin-top: 4.8rem;
+	}
+	.section {
+		grid-template-columns: 1fr;
+	}
+	.img-hero {
+		width: 100%;
+		padding: 0 2.4rem;
+	}
+	.box-text {
+		text-align: center;
+	}
+	.title {
+		margin: 0;
+	}
+}
